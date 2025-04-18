@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Explainer Extension",
+    "version": "1.0",
+    "description": "Explain any selected text using LLM!",
+    "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "webRequest" 
+  ],
+  "host_permissions": [
+    "https://*.googleapis.com/*"  
+  ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icons/logo.jpeg"
+    },
+    "action": {
+      "default_icon": "icons/logo.jpeg"
+    }
+  }
