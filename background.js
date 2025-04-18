@@ -1,4 +1,4 @@
-const GOOGLE_API_KEY = "AIzaSyBDlddL7Y8NBJyHwqdCgkYtBAgHsN2fZg0";
+const GOOGLE_API_KEY = "your api";
 const MODEL_NAME = "gemini-1.5-flash";
 
 // Debug function to force console logs to appear
